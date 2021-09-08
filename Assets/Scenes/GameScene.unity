@@ -552,7 +552,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 345149830}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1837291055}
+        m_TargetAssemblyTypeName: ShipyardManager, Assembly-CSharp
+        m_MethodName: ShowShipInfo
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Battleship
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &345149830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +902,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550834582}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1837291055}
+        m_TargetAssemblyTypeName: ShipyardManager, Assembly-CSharp
+        m_MethodName: ShowShipInfo
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Carrier
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &550834582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1794,6 +1818,7 @@ MonoBehaviour:
   shipRankText: {fileID: 78964550}
   shipStatsText: {fileID: 1203891282}
   shipInfoPanel: {fileID: 1091310870}
+  title: {fileID: 471512314}
 --- !u!1 &2028258742
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,13 @@ public class ShipyardManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI shipRankText;
     [SerializeField] private TextMeshProUGUI shipStatsText;
     [SerializeField] private GameObject shipInfoPanel;
+    [SerializeField] private TextMeshProUGUI title;
+
+
+    public void Start()
+    {
+        title.text = GameManager.Instance.playerName + "'s Shipyard";
+    }
 
     public void ShowShipInfo(string shipClass)
     {
@@ -17,15 +24,39 @@ public class ShipyardManager : MonoBehaviour
         switch (shipClass)
         {
             case "Destroyer":
-                Destroyer playerShip = new Destroyer();
-                playerShip.GenerateShip();
-                PrintShipName(playerShip);
-                PrintShipClass(playerShip);
-                PrintShipRank(playerShip);
-                PrintShipMainStats(playerShip);
-                PrintShipDestroyerStats(playerShip);
+                Destroyer destroyerShip = new Destroyer();
+                destroyerShip.GenerateShip();
+                PrintShipName(destroyerShip);
+                PrintShipClass(destroyerShip);
+                PrintShipRank(destroyerShip);
+                PrintShipMainStats(destroyerShip);
+                PrintShipDestroyerStats(destroyerShip);
                 shipInfoPanel.SetActive(true);
                 break;
+
+            case "Carrier":
+                Carrier carrierShip = new Carrier();
+                carrierShip.GenerateShip();
+                PrintShipName(carrierShip);
+                PrintShipClass(carrierShip);
+                PrintShipRank(carrierShip);
+                PrintShipMainStats(carrierShip);
+                PrintShipCarrierStats(carrierShip);
+                shipInfoPanel.SetActive(true);
+                break;
+            
+            case "Battleship":
+                Battleship battleShip = new Battleship();
+                battleShip.GenerateShip();
+                PrintShipName(battleShip);
+                PrintShipClass(battleShip);
+                PrintShipRank(battleShip);
+                PrintShipMainStats(battleShip);
+                PrintShipBattleshipStats(battleShip);
+                shipInfoPanel.SetActive(true);
+                break;
+
+
         }
 
     }
@@ -63,5 +94,17 @@ public class ShipyardManager : MonoBehaviour
 
     }
 
+    private void PrintShipCarrierStats(Carrier playerShip)
+    {
+        shipStatsText.text += "Aviation: " + playerShip.Aviation + "\n"
+                            + "AAGuns: " + playerShip.AAGuns + "\n"
+                            ;
 
+    }
+    private void PrintShipBattleshipStats(Battleship playerShip)
+    {
+        shipStatsText.text += "Torpedoes: " + playerShip.Torpedoes + "\n"
+                            ;
+
+    }
 }
