@@ -651,3 +651,67 @@ System memory in use after: 85.7 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2355.
 Total: 1.945500 ms (FindLiveObjects: 0.170800 ms CreateObjectMapping: 0.062700 ms MarkObjects: 1.612700 ms  DeleteObjects: 0.098200 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000955 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.786 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.8 MB.
+System memory in use after: 85.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2359.
+Total: 1.836400 ms (FindLiveObjects: 0.153300 ms CreateObjectMapping: 0.053200 ms MarkObjects: 1.493200 ms  DeleteObjects: 0.135900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 74334.395412 seconds.
+  path: Assets/Scripts/ShipyardManager.cs
+  artifactKey: Guid(3dc95e3636ab38148948c9c29bc4b0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShipyardManager.cs using Guid(3dc95e3636ab38148948c9c29bc4b0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd2c184d3cad7400d8baea5131493197') in 0.024663 seconds
+  Import took 0.027674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010934 seconds.
+  path: Assets/Scripts/ShipyardManager.cs
+  artifactKey: Guid(3dc95e3636ab38148948c9c29bc4b0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShipyardManager.cs using Guid(3dc95e3636ab38148948c9c29bc4b0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd2c184d3cad7400d8baea5131493197') in 0.022276 seconds
+  Import took 0.025172 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000983 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.8 MB.
+System memory in use after: 85.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2363.
+Total: 2.538700 ms (FindLiveObjects: 0.417600 ms CreateObjectMapping: 0.110200 ms MarkObjects: 1.886100 ms  DeleteObjects: 0.123200 ms)
+
