@@ -61,23 +61,23 @@ public class ShipyardManager : MonoBehaviour
 
     }
 
-    private void PrintShipName(Ship playerShip)
+    private void PrintShipName(Ship playerShip) //ABSTRACTION
     {
         shipNameText.text = playerShip.ShipName;
     }
 
        
-    private void PrintShipClass(Ship playerShip)
+    private void PrintShipClass(Ship playerShip) //ABSTRACTION
     {
         shipClassText.text = "Class: " + playerShip.ShipClass;
 
     }
-    private void PrintShipRank(Ship playerShip)
+    private void PrintShipRank(Ship playerShip) //ABSTRACTION
     {
         shipRankText.text = "Rank: " + playerShip.Rank;
     }
 
-    private void PrintShipMainStats(Ship playerShip)
+    private void PrintShipMainStats(Ship playerShip) //ABSTRACTION
     {
         shipStatsText.text = "Armor: " + playerShip.Armor + "\n"
                             + "Artillery: " + playerShip.Artillery + "\n"
@@ -86,7 +86,7 @@ public class ShipyardManager : MonoBehaviour
 
     }
 
-    private void PrintShipDestroyerStats(Destroyer playerShip)
+    private void PrintShipDestroyerStats(Destroyer playerShip) //ABSTRACTION
     {
         shipStatsText.text += "Torpedoes: " + playerShip.Torpedoes + "\n"
                             + "AAGuns: " + playerShip.AAGuns + "\n"
@@ -94,14 +94,14 @@ public class ShipyardManager : MonoBehaviour
 
     }
 
-    private void PrintShipCarrierStats(Carrier playerShip)
+    private void PrintShipCarrierStats(Carrier playerShip) //ABSTRACTION
     {
         shipStatsText.text += "Aviation: " + playerShip.Aviation + "\n"
                             + "AAGuns: " + playerShip.AAGuns + "\n"
                             ;
 
     }
-    private void PrintShipBattleshipStats(Battleship playerShip)
+    private void PrintShipBattleshipStats(Battleship playerShip) //ABSTRACTION
     {
         shipStatsText.text += "Torpedoes: " + playerShip.Torpedoes + "\n"
                             ;
